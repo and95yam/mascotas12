@@ -1,0 +1,7 @@
+2.	CREATE TABLE `mascotas`.`paciente` ( `id_mascota` INT(11) NOT NULL AUTO_INCREMENT , `id_cliente` VARCHAR(11) NOT NULL , `alias` VARCHAR(50) NOT NULL , `Especie` VARCHAR(50) NOT NULL , `Raza` VARCHAR(50) NOT NULL , PRIMARY KEY (`id_mascota`)) ENGINE = InnoDB;
+3.	
+4.	CREATE TABLE `mascotas`.`vacunas` ( `id_mascota` INT(11) NOT NULL , `fecha` VARCHAR(50) NOT NULL , `enfermedad` VARCHAR(50) NOT NULL , `fecha_prox` VARCHAR(50) NOT NULL , PRIMARY KEY (`id_mascota`)) ENGINE = InnoDB;
+5.	
+
+8.	ADD CONSTRAINT FK_id
+9.	FOREIGN KEY (id_mascota) REFERENCES paciente(id_mascota);
